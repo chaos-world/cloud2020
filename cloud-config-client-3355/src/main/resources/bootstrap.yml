@@ -18,6 +18,13 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka
 
+  #rabbitmq相关配置 15672是Web管理界面的端口；5672是MQ访问的端口
+rabbitmq:
+  host: 192.168.178.128
+  port: 5672
+  username: root
+  password: 123456
+
 # 暴露监控端点
 management:
   endpoints:
